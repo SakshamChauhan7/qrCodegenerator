@@ -11,9 +11,10 @@ qr = qrcode.QRCode(
     box_size=20,
     border=2,
 )
-
-qr.add_data("https://github.com/SakshamChauhan7")
+link = "https://sakshamchauhan7.github.io/"
+name = "oldResumeWeb.png"
+qr.add_data(link)
 
 img = qr.make_image(fill_color = "green", back_color = "black")
 
-img.save("gitProfile.png")
+img.save(name)
