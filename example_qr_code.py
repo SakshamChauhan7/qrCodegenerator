@@ -11,9 +11,13 @@ qr = qrcode.QRCode(
     box_size=20,
     border=2,
 )
+print("Enter the the origin/link for Qr code generator: ")
+data= input()
+qr.add_data(data)
 
-qr.add_data("https://github.com/SakshamChauhan7")
-
+print("Whats the file name you want to save: ")
+name = input()
+fileName = name + ".png"
 img = qr.make_image(fill_color = "green", back_color = "black")
 
-img.save("gitProfile.png")
+img.save(fileName)
