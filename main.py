@@ -44,7 +44,7 @@ app.resizable(False,False)
 
 tk.Label(app,font=('calibre',20),text= "Welcome QRcode Gen By Sam").pack(pady = 80)
 
-#fileName label and entry
+#data label and entry
 linkLabel = Label(app, font=('calibre',15),text= "Enter the Link or Info: ")
 linkLabel.place(x=40,y=150)
 
